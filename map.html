@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore | Park&Dine</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="map.js" defer></script>
+</head>
+<body>
+    <div id="map-container">
+        <div id="map">
+            <img src="images/map/driveview.png" alt="map" id="map-image">
+        </div>
+        <div id="maplayer">
+            <div id="drivemode" class="layeroption layerselected">
+                <button id="carlayer" value="car"><img src="images/icons/car.svg" alt="Car View"></button>
+            </div>
+            <div id="bikemode" class="layeroption">
+                <button id="bikelayer" value="bike"><img src="images/icons/bicycle.svg" alt="Bicycle View"></button>
+            </div>
+            <div id="walkmode" class="layeroption">
+                <button id="walklayer"><img src="images/icons/walk.svg" alt="Walking View"></button>
+            </div>
+        </div>
+    </div>
+    <div id="slideover">
+        <div id="slideovercontrol">
+            <button id="slide"></button>
+        </div>
+        <div id="slideovercontent">
+            <div id="slideovermain">
+                <div id="searchsection" class="slidesection">
+                    <h1>Reserve</h1>
+                    <input type="text" id="search" name="search" placeholder="Search for a restaurant, street, cuisine..."><br>
+                    <div class="additionalfields">
+                        <img class="icon" src="images/icons/calendar-outline.svg" alt="calendar icon">
+                        <input type="date" id="date" name="date">
+                        <img class="icon" src="images/icons/time-outline.svg" alt="clock icon">
+                        <input type="time" id="time" name="time">
+                    </div>
+                </div>
+                <div class="slidesection">
+                    <h1>Explore</h1>
+                    <div id="locations">
+                        <!--JS populate-->
+                    </div>
+                </div>
+            </div>
+            <!-- Reservation mode -->
+            <div id="slideovermain" class="hidden">
+                <div class="slidesection">
+                    <h1>Reserve</h1>
+                    <div class="selection-container">
+                        <button id="backtosearch"><img src="images/icons/close-circle.svg"></button>
+                        <div id="reservation-selection">
+                            <div id="selected-location">
+                                <div class="location-left">
+                                    <h2>4646 Convoy Street</h2>
+                                    <div class="geninfo">
+                                        <span class="left light">Dining plaza</span>
+                                        <span class="right light" class="light">Open today until 11pm</span><br>
+                                    </div>
+                                    <div class="availables">
+                                        <span><img src="images/icons/parking.svg"></span>
+                                        <span class="right">5 spaces reservable</span>
+                                    </div>
+                                </div>
+                                <div class="location-right">
+                                    <img src="images/additional/4646cs.png" alt="4646 Convoy Street">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="additionalfields spacebelow">
+                            <img class="icon" src="images/icons/calendar-outline.svg" alt="calendar icon">
+                            <input type="date" id="reservation-date" name="date">
+                            <img class="icon" src="images/icons/time-outline.svg" alt="clock icon">
+                            <input type="time" id="reservation-time" name="time">
+                        </div>
+                        <div class="additionalfields spacebelow">
+                            <div class="halfcol">
+                                <span class="icon-box">
+                                    <img class="icon" src="images/icons/yelp.png" alt="yelp icon">
+                                </span>
+                                <button id="yelp" name="yelp">Yelp Reservation</button>
+                            </div>
+                            <div class="halfcol">
+                                <img class="icon" src="images/icons/people-outline.svg" alt="carpool icon">
+                                <select id="carpool" name="carpool">
+                                    <option value="1">No Carpool</option>
+                                    <option value="2">2 people carpool (- $1.0)</option>
+                                    <option value="3">3 people carpool (- $1.5)</option>
+                                    <option value="4">4 people carpool (- $2.0)</option>
+                                    <option value="5">5 people carpool (- $2.5)/option>
+                                    <option value="6">5+ Vanpool (- $2.5)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="additionalfields spacebelow">
+                            <img class="icon" src="images/icons/car-outline.svg">
+                            <select id="car" name="car">
+                                <option value="1">CA 8SVF280 (Default)</option>
+                                <option value="2">CA 2ABC345</option>
+                            </select>
+                        </div>
+                        <br>
+                        <h1>Payment</h1>
+                        <div id="summary">
+                        </div>
+                        <div id="payment">
+                            <select id="paymentmethod" name="paymentmethod">
+                                <option value="APPL">Apple Pay</option>
+                                <option value="CCRD">Credit Card</option>
+                                <option value="PAYP">Paypal</option>
+                            </select>
+                        </div>
+                        <button class="full-action-button" id="reserve">Reserve</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav-placeholder"></div>
+    <script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Park&Dine</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="reservations.js" defer></script>
+</head>
+<body>
+    <header>
+        <img id = "logo-header" src="images/PARKDINE_blue.png" alt="parkdine yellow logo">
+    </header>
+    <div class="additionalfields">
+        <img class="icon" src="images/icons/calendar-outline.svg" alt="calendar icon">
+        <select id="when" name="when">
+            <option value="Upcoming">Upcoming</option>
+            <option value="Past">Past</option>
+        </select>
+        <img class="icon" src="images/icons/car-outline.svg" alt="car icon">
+        <select id="when" name="when">
+            <option value="Upcoming"> CA 8SVF280</option>
+            <option value="Past">CA 2ABC345</option>
+        </select>
+    </div>
+    <div id="reservations">
+        <h1>Upcoming Reservations</h1>
+        <div class="reservation">
+            <div class="reservation-info">
+                <h2>4646 Convoy Street</h2>
+                <span class="left">Dining plaza</span>
+                <span class="right">Regular reserved parking</span><br>
+                <span class="left">Space <b>2398</b></span>
+                <span class="right">11/4<b> 7:00 pm - 8:15 pm</b></span>
+            </div>
+            <div class="streetpic">
+                <img src="images/additional/4646cs.png" alt="4646 Convoy Street">
+            </div>
+            <div class="reservation-action">
+                <button>Cancel</button>
+            </div>
+        </div>
+        <div class="reservation">
+            <div class="reservation-info">
+                <h2>Common Theory Public House</h2>
+                <p>Reservation for 4</p>
+                <p>Table 3</p>
+                <p>Reservation Time: 7:00 PM</p>
+                <p>Parking Space: 2</p>
+            </div>
+            <div class="reservation-action">
+                <button>Cancel</button>
+            </div>
+        </div>
+    <div id="nav-placeholder"></div>
+    <script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park&Dine</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="landing">
+        <img id = "background" src="images/convoynight.jpg" alt="night background">
+        <div class="logo-container">
+            <img id = "logo" src="images/PARKDINE_yellow.png" alt="parkdine yellow logo">
+        </div>
+    </div>
+    <div id="login">
+        <h1>Welcome</h1>
+        <p>new to Park&Dine? <a href = "register.html">create an account</a></p>
+        <form>
+            <input type="text" id="username" name="username" placeholder="username" required><br>
+            <input type="password" id="password" name="password" placeholder="password" required><br>
+            <div id="forgotpass">
+                <a href="forgotpassword.html">forgot password?</a><br>
+            </div>
+            <div id="login-submit">
+                <input class = "action-left-button" type="button" value="Guest Login">
+                <input class = "action-right-button" type="submit" id="proceedtoapp" value="Login">
+            </div>
+        </form>
+    </div>
+    <div class="slidesection">
+        <div class="explain" id="usemobile">
+            <h1>Use Park&Dine on your mobile device</h1>
+            <p>Our web app is designed to be used on your mobile device. You can easily reserve a parking space while you are on the go. You can also view your reservations and cancel them if needed. We also have a map feature that shows you the locations of the participating plazas. You can also view the parking availability at each plaza. We are constantly updating our app to make it more user friendly and convenient for you.</p>
+        </div>
+        <div class="explain">
+            <h1>Our mission</h1>
+            <p>Park&Dine's mission is to transform the Convoy Asian Cultural District by <b>solving parking challenges</b> while boosting local businesses. Our innovative web app connects diners with convenient parking solutions, encourages carpooling, safe walking, and <b>reinvests in the community</b>. By streamlining parking and promoting sustainable practices, we aim to enhance the visitor experience, support economic growth, and preserve the district's unique cultural identity, creating a more vibrant and accessible Convoy for all.</p>
+        </div>
+        <div class="explain">
+            <h1>How it works</h1>
+            <p>Participating plazas offer spaces labeled as reserved. These reservation signs have digital signage that show if the license plate number in which the space is reserved for as well as the time it is reserved for. When you book a table at a restaurant, you can save yourself time by reserving a parking space as well. When it comes time to your reservation, you simply park at in the space with your license plate. It's a win-win: you do not have to stress about parking and the revenue collected goes to the business you are visitng.</p>
+        </div>
+    </div>
+</body>
+</html>
