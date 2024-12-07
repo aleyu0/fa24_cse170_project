@@ -1,1 +1,1 @@
-See [here](https://drive.google.com/drive/folders/1tr8CU5mNuni5OhN1EHd1f8yoDsjMmyAI?usp=drive_link) for full documentation and demo videos, or visit the implemented [GitHub site](https://aleyu0.github.io/fa24_cse170_project/map.html). 
+See [here](https://drive.google.com/drive/folders/1tr8CU5mNuni5OhN1EHd1f8yoDsjMmyAI?usp=drive_link) for full documentation and demo videos, or visit the implemented [GitHub site](https://aleyu0.github.io/fa24_cse170_project/login.html). 
